@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Through the Eyes of a Survivor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Through the Eyes of a Survivor</title>
+
+  <link rel="stylesheet" href="css/bootstrap.slate.min.css">
+  <link rel="stylesheet" href="css/slider/nouislider.min.css">
+  <link rel="stylesheet" href="css/slider/nouislider.pips.css">
+  <link rel="stylesheet" href="css/slider/nouislider.tooltips.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+  <div id="fullpage">
+
+    <section class="section" id="section-intro">
+      <div class="container" id="cover-container">
+        <h1 class="mega-header">Through the Eyes of a Survivor</h1>
+        <h2>Understanding the epidemic of sexual assault on American college campuses</h2>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1>Meet Faby Chiaveta.</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="lead">She's a student at a University in Santa Clara, California. She is my girlfriend. She's just like any of us.</p>
+            <p class="lead">Faby might be your friend who lives in your dorm, your study group partner, someone you sit with in the dining hall.</p>
+            <p class="lead"><strong>And she was sexually assaulted.</strong></p>
+          </div>
+          <div class="col-sm-6">
+            <div id="american-scene">
+              <img class="img-rounded" id="american-bg" src="images/american-university.jpg">
+              <img src="images/woman-white.png" id="american-woman">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Faby was sexually assaulted. Here's her story.</a></h2>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="party-scene">
+              <img src="images/woman-white.png" id="party-woman">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <samp id="story-faby"></samp>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>Sexual assaults aren't just isolated events at parties, though.</h2>
+        <p class="lead">Here are some situations that Faby and women like her have been in. Are these examples of sexual assault?</p>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <div class="row">
+              <div class="col-xs-6">
+                <p class="lead text-info">"I didn't want to have sex, but I did anyway because...</p>
+                <table id="quiz-choices" class="table table-condensed"></table>
+              </div>
+              <div class="col-xs-6">
+                <div id="quiz-result">
+
+                  <p class="text-warning lead" id="quiz-correct">
+                    Correct. This is sexual assault. One survivor's story:
+                  </p>
+                  <p class="text-danger lead" id="quiz-incorrect">
+                    Incorrect. This <em>is</em> sexual assault. One survivor's story:
+                  </p>
+
+                  <blockquote>
+                    <span id="quiz-story"></span>
+                    <footer>
+                      Student
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>So Faby's story is far from unique.</h2>
+        <p class="lead">
+          Here are Faby and 99 women just like her. They're students, athletes, campus leaders, friends, roommates.
+        </p>
+
+        <p class="lead">
+          <strong>But 1 in 5 of them will be sexually assaulted in college. </strong>
+        </p>
+
+        <div class="row">
+
+          <div class="col-xs-5">
+            <div id="affected"></div>
+          </div>
+
+          <div class="col-xs-7">
+
+            <div class="lead">
+
+              <p>
+                <span id="fact"></span>
+                <button onclick="survivors.nextVis()" class="btn btn-primary" id="survivor-button">
+                    Next
+                </button>
+              </p>
+            </div>
+
+            <hr>
+
+            <blockquote class="lead" id="survivor-quote" style="display:none;">
+              <span id="quote-text"></span>
+              <footer>
+                <a href="https://www.washingtonpost.com/graphics/local/sexual-assault/">
+                  <span id="quote-source"></span>
+                </a>
+              </footer>
+            </blockquote>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Sexual assault is a huge problem on your campus, too.</h2>
+        <p class="lead">
+          This isn't just at Faby's school. Women at top colleges across the country face alarmingly high rates of sexual assault.
+        </p>
+        <div class="container">
+          <div class="row row-eq-height">
+
+            <div class="col-sm-9">
+              <div id="campus-map"></div>
+            </div>
+
+            <div class="col-sm-3 well well-white" id="campus-info-holder">
+              <div id="campus-info">
+                <img id="college-image">
+                <div id="college-quick-info">
+                  <h4 id="college-name"></h4>
+                  <h5 id="college-location"></h5>
+                </div>
+              </div>
+
+              <p>Percent of women at this school who were sexually assaulted:</p>
+              <div class="progress">
+                <div id="progress-move" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <p>Average sexual assault rate across schools:</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100" style="width: 23%;">
+                  23%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>Faby was one of the few who decided to report her sexual assault.</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="arrest-wheel"></div>
+          </div>
+          <div class="col-sm-6">
+            <p class="lead">She was one of the just 5% of college survivors who reported. But now there's just a 1-in-16 chance that her assailant will get arrested. It's like playing roulette...</p>
+            <p class="lead">
+              <span id="wheel-start" class="text-info">
+                      Click the wheel to see what happens to Faby's assailant.
+                    </span>
+              <span id="wheel-win" class="text-success">
+                    Faby was one of the lucky 6%: her assailant was arrested. But even now, there's just a 1-in-10 chance that they'll spend any time in jail...
+                    </span>
+              <span id="wheel-lose" class="text-danger">
+                    As happens 94% of the time, Faby's assailant wasn't arrested. Far too often, assailants don't face arrest because schools downplay the accusations or drop charges entirely.
+                    </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>It's no wonder that sexual assault is one of the least-reported violent crimes.</h2>
+        <p class="lead">Less than 40% of survivors nationwide report to police, less than nearly every other violent crime in the country.</p>
+
+        <p>Many survivors are afraid to report because they fear retaliation, believe the police won't do anything to help, or think it isn't important enough to report.</p>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <p id="bar-title" class="axis-title">Sexual assault is one of the least<br> reported violent crimes in America</p>
+              <div id="police-reports-bars"></div>
+              <p id="crime-type" class="axis-title">Type of Crime</p>
+            </div>
+
+            <div class="col-sm-6">
+              <p id="bar-title" class="axis-title">This trend hasn't improved over time</p>
+
+              <div id="police-reports"></div>
+              <p id="police-year" class="axis-title">Year</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>But there is hope for women like Faby.</h2>
+        <p class="lead">
+          Like other serious violent crimes, the rate of sexual assault has dropped significantly in recent years, although it still happens frighteningly often.
+        </p>
+
+
+        <div class="row">
+          <div class="col-sm-6">
+
+            <div id="comparative-rates"></div>
+
+            <button class="btn btn-primary block-center" id="comparative-rates-play">
+                Play
+            </button>
+          </div>
+          <div class="col-sm-6">
+            <div id="rate-report"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <h2>There are plenty of resources to help Faby and women like her.</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="well">
+              <h3>
+                  If you are in immediate danger, call <span class="text-danger">911</span>.
+              </h3>
+              <h3>
+                If you have been sexually assaulted, call the National Sexual Assault Hotline: <a href="tel:1-800-656-4673" class="text-info">800.656.HOPE</a>.
+                </h3>
+            </div>
+          </div>
+          <div class="col-md-8">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#step1" aria-controls="home" role="tab" data-toggle="tab">Seeking immediate help</a></li>
+              <li role="presentation"><a href="#step4" aria-controls="settings" role="tab" data-toggle="tab">Filing police reports</a></li>
+              <li role="presentation"><a href="#step5" aria-controls="step5" role="tab" data-toggle="tab">Concerns about reporting</a></li>
+              <li role="presentation"><a href="#step6" aria-controls="settings" role="tab" data-toggle="tab">Mental health</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content top-padding" id="help-tabs">
+              <div role="tabpanel" class="tab-pane active" id="step1">
+                <p class="lead">If you are seriously injured or still in immediate danger, call <span class="text-danger">911</span>.</p>
+
+                <p>If you have been sexually assaulted, do the following immediately:</p>
+                <ol>
+                  <li>Call the free, anonymous, and confidential <strong>National Sexual Assault Hotline</strong> at <a href="https://www.rainn.org/about-national-sexual-assault-telephone-hotline" target="_blank" class="text-info">800.656.HOPE</a>. A trained
+                    staffer will talk through what happened with you, find you medical help, connect you with forensic exams, and tell you about long-term support resources. For 24/7 help, you can use the <a href="http://online.rainn.org/" class="text-info">online hotline</a>.
+                  </li>
+                  <li>
+                    If you're on a college campus, visit your <strong>sexual assault response office</strong> (e.g. <a href="http://osapr.harvard.edu/">Harvard's</a>).</li>
+                  <li>
+                    <strong>Seek medical attention</strong> as soon as possible. Medical care is important to care for your injuries and to protect against sexually transmitted diseases and pregnancy.</li>
+                  <li>
+                    Contact your local or campus <strong>police department</strong> in person or over the phone.</li>
+                </ol>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="step4">
+                <p class="lead">If you want to file a police report:</p>
+                <ul>
+                  <li>Seek medical attention for a forensic exam and evidence collection immediately after the assault.</li>
+                  <li>Try not to bathe, shower, change your clothes, eat, drink, smoke, gargle, or urinate prior to the exam.</li>
+                  <li>Bring a change of clothes with you.</li>
+                  <li>You have the right to have a sexual assault counselor/advocate with you during your medical exam.</li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step5">
+                <p class="lead">You want to report, but what if...</p>
+
+                <dl>
+                  <dt>The perpetrator got scared away before finishing the assault?</dt>
+                  <dd>You should still file because attempted rape is a serious crime and can be reported.</dd>
+
+                  <br>
+
+                  <dt>You have no physical injuries and you're worried there's not enough proof?</dt>
+                  <dd>
+                    You should still file because most sexual assaults don't result in external physical injuries. You can choose to have a sexual assault forensic to check for DNA evidence that may not be visible on the surface.
+                  </dd>
+
+                  <br>
+
+                  <dt>You are worried that law enforcement won't believe you?</dt>
+                  <dd>
+                    This has been a great investment in police training on this topic. While there are occasional exceptions, most law enforcement officers are understanding and on your side. If you do encounter someone who isn't taking you seriously, ask for their supervisor
+                    and let them know.
+                  </dd>
+                </dl>
+
+              </div>
+              <div role="tabpanel" class="tab-pane" id="step6">
+                <p class="lead">Reach out for help if you feel your mental health is at risk:</p>
+                <ul>
+                  <li><a href="https://treatment.psychologytoday.com/" target="_blank">Psychology Today:</a> Find professional listings for treatment centers in the United States and Canada</li>
+                  <li><a href="http://www.nami.org/" target="_blank">National Alliance on Mental Illness (NAMI):</a> Provides information and referral services. You can also call their helpline: 888.950.NAMI (6264)</li>
+                  <li><a href="http://www.goodtherapy.org/" target="_blank">GoodTherapy.org:</a> GoodTherapy.org is an association of mental health professionals from more than 25 countries worldwide.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h2>And there's plenty we can do to help.</h2>
+
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <a href="http://rainn.org/">RAINN</a> is the country's largest anti-sexual violence organization. They run a hotline for victims, push public policy, and educate the public. For less than a dollar a day, you can help educate 15,000 people
+                about preventing sexual violence.
+              </div>
+              <div class="panel-footer">
+                <a href="https://donate.rainn.org/" target="_blank" class="btn btn-success btn-block">Donate to RAINN</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <a href="http://www.nsvrc.org/">The National Sexual Violence Resource Center</a> develops sexual assault prevention resources and works to implement them with governments and community organizations.
+              </div>
+              <div class="panel-footer">
+                <a href="http://www.nsvrc.org/donate" target="_blank" class="btn btn-success btn-block">Donate to NSVRC</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <a href="http://pact5.org/">PACT5</a> is a national movement to prevent sexual assaults in college. They support student advocates who make documentaries that can change dangerous behavior patterns.
+              </div>
+              <div class="panel-footer">
+                <a href="http://pact5.org/make-the-pact/" target="_blank" class="btn btn-info btn-block">Sign on to support PACT5</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <a href="http://itsonus.org/">It's On Us</a> is President Obama's initiative to raise awareness and fight against sexual assault in college. Take the pledge to not be a bystander but rather to be part of the solution.
+              </div>
+              <div class="panel-footer">
+                <a href="http://itsonus.org/#pledge" target="_blank" class="btn btn-info btn-block">Take the It's On Us pledge</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </div>
+
+    <!-- Load JS libraries: jQuery, bootstrap, D3 -->
+    <script src="js/lib/jquery.min.js "></script>
+    <script src="js/lib/bootstrap.min.js "></script>
+    <script src="js/lib/d3.min.js "></script>
+    <script src="js/lib/d3.grid.min.js "></script>
+    <script src="js/lib/malarkey.min.js "></script>
+    <script src="js/lib/d3-ease.v1.min.js "></script>
+    <script src="js/lib/d3.legend.js "></script>
+    <script src="js/lib/jquery.fullPage.min.js "></script>
+
+    <!-- Your implementation -->
+    <script src="js/campusmap.js "></script>
+    <script src="js/barchart.js "></script>
+    <script src="js/survivors.js "></script>
+    <script src="js/linechart.js "></script>
+    <script src="js/comparative-rates.js "></script>
+    <script src="js/people-display.js "></script>
+    <script src="js/arrest-wheel.js "></script>
+    <script src="js/quiz.js "></script>
+    <script src="js/rate-report.js "></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>
