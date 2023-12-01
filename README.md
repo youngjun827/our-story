@@ -8,7 +8,7 @@ The project "The Courage Within" is a dedicated effort to understand the epidemi
 
 This initiative is a heartfelt tribute to Faby, a victim of sexual assault, and is intended to serve as a beacon of awareness. The gravity of the subject matter underscores the importance of addressing this pervasive societal challenge.
 
-For further details, you can contact me using the email: youngjunjoo827@gmail.com
+For further details, you can contact the author using the email: youngjunjoo827@gmail.com
 
 ## Thank you
 
