@@ -1,10 +1,10 @@
-# Through the Eyes of a Survivor
+# The Courage Within
 
 > Understanding the epidemic of sexual assault on college campuses
 
 ## About the project
 
-The project "Through the Eyes of a Survivor" is a dedicated effort to understand the epidemic of sexual assault on college campuses. It is a solemn endeavor by Young Jun Joo, aimed at spreading awareness of this critical issue to contribute to a better world.
+The project "The Courage Within" is a dedicated effort to understand the epidemic of sexual assault on college campuses. It is a solemn endeavor by Young Jun Joo, aimed at spreading awareness of this critical issue to contribute to a better world.
 
 This initiative is a heartfelt tribute to Faby, a victim of sexual assault, and is intended to serve as a beacon of awareness. The gravity of the subject matter underscores the importance of addressing this pervasive societal challenge.
 
