@@ -1,15 +1,15 @@
-# [Through the Eyes of a Survivor]
+# Through the Eyes of a Survivor
 
 > Understanding the epidemic of sexual assault on college campuses
 
 ## About the project
 
-This project is dedicated towards my girlfriend Faby who is a victim of a sexual assault and I dedicate this project to spread awareness on the issue to help better the world. By [Young Jun Joo](https://github.com/youngjun827).
+The project "Through the Eyes of a Survivor" is a dedicated effort to understand the epidemic of sexual assault on college campuses. It is a solemn endeavor by Young Jun Joo, aimed at spreading awareness of this critical issue to contribute to a better world.
 
-## Project deliverables
+This initiative is a heartfelt tribute to Faby, a victim of sexual assault, and is intended to serve as a beacon of awareness. The gravity of the subject matter underscores the importance of addressing this pervasive societal challenge.
 
-- [Screencast video](https://youtu.be/prOCyoFYOUo)
+For further details, you can contact me using the email: youngjunjoo827@gmail.com
 
 ## Thank you
 
-With special thanks to my partner Faby; my dearest friend and companion.
+The project's profound significance is underscored by the dedication to Faby, symbolizing a commitment to advocating for change and supporting survivors of sexual assault.
